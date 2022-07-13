@@ -2,17 +2,18 @@ import React from 'react'
 import '../App.css'
 import { Button } from './Button'
 import './HeroSection.css'
+import videoBg from '../assets/021.webm'
 
 function HeroSection() {
   return (
     <div className='hero-container'>
-      <video 
-        // src="/videos/011.mp4" 
-        src='/videos/021.webm'
-        autoPlay 
-        loop 
-        muted
-      />
+      <video loop autoPlay muted>
+        <source 
+          src={videoBg} 
+          type='video/webm'
+        />
+        Your browser does not support the video tag.
+      </video>
       <h1>ADVENTURE AWAITS</h1>
       <p>What are you waiting for?</p>
       <div className="hero-btns">

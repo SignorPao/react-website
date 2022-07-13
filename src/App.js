@@ -5,6 +5,11 @@ import {
   BrowserRouter as Router, 
   Routes, 
   Route } from 'react-router-dom';
+// import {
+//   BrowserRouter,
+//   Routes,
+//   Route,
+// } from "react-router-dom";
 import Home from './components/pages/Home';
 import Services from './components/pages/Services';
 import Products from './components/pages/Products';
@@ -16,12 +21,21 @@ function App() {
       <Router>
         <Navbar />
         <Routes>
-          <Route exact path='/' element={<Home />} />
+          <Route path='/' exact element={<Home />} />
           <Route path='/services' element={<Services />} />
           <Route path='/products' element={<Products />} />
           <Route path='/sign-up' element={<SignUp />} />
         </Routes>
       </Router>
+      {/* <Navbar />
+      <BrowserRouter>
+        <Routes>
+          <Route exact path='/' element={<Home />} />
+          <Route path='/services' element={<Services />} />
+          <Route path='/products' element={<Products />} />
+          <Route path='/sign-up' element={<SignUp />} />
+        </Routes>
+      </BrowserRouter> */}
     </>
   );
 }

@@ -8,7 +8,7 @@ video {
 
 .hero-container {
   /* background: url("/public/images/00.webp") center center/cover no-repeat; */
-  /* height: 90vh; */
+  height: 90vh;
   height: 100vh;
   width: 100%;
   display: flex;
